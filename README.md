@@ -30,6 +30,6 @@
 
 如果有需要的功能可以直接给我提交issue。
 
-![](https://github.com/hbbdsqd/QDMovie/weixin.jpeg)
+![](https://github.com/hbbdsqd/QDMovie/blob/master/weixin.jpeg)
 
-![](https://github.com/hbbdsqd/QDMovie/zhifubao.jpeg)
+![](https://github.com/hbbdsqd/QDMovie/blob/master/zhifubao.jpeg)
