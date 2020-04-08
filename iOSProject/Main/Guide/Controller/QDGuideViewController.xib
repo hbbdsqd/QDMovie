@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QDGuideViewController">
+            <connections>
+                <outlet property="goHomeBtn" destination="A1J-Cb-Ask" id="VBb-ec-qfQ"/>
+                <outlet property="pageControl" destination="NOw-d5-Txe" id="Ul3-xF-ewv"/>
+                <outlet property="scrollView" destination="auu-pd-Sw1" id="P30-vr-SRx"/>
+                <outlet property="skipBtn" destination="1um-kR-ryH" id="M3O-sA-Z1x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auu-pd-Sw1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fqF-Xa-eYw"/>
+                    </connections>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1um-kR-ryH">
+                    <rect key="frame" x="305" y="30" width="40" height="20"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="JvX-YP-cXk"/>
+                        <constraint firstAttribute="width" constant="40" id="tUu-AM-2t0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="跳过">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skipBtnClick:" destination="-1" eventType="touchUpInside" id="geL-Ut-uVH"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1J-Cb-Ask">
+                    <rect key="frame" x="107.5" y="517" width="160" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="Ga5-Hj-ZlO"/>
+                        <constraint firstAttribute="height" constant="50" id="i5p-3N-uUZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="立 即 体 验">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goHomeBtnClick:" destination="-1" eventType="touchUpInside" id="fcx-55-eGm"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NOw-d5-Txe">
+                    <rect key="frame" x="168" y="580" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1um-kR-ryH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="02b-Q1-TOJ"/>
+                <constraint firstItem="auu-pd-Sw1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2dx-Rz-5Ag"/>
+                <constraint firstItem="A1J-Cb-Ask" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bfh-ql-MxZ"/>
+                <constraint firstItem="NOw-d5-Txe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="E1z-4E-gof"/>
+                <constraint firstItem="auu-pd-Sw1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NHi-7r-yTU"/>
+                <constraint firstAttribute="bottom" secondItem="NOw-d5-Txe" secondAttribute="bottom" constant="50" id="fbi-7m-kvY"/>
+                <constraint firstAttribute="trailing" secondItem="auu-pd-Sw1" secondAttribute="trailing" id="g1W-71-Y0f"/>
+                <constraint firstAttribute="bottom" secondItem="A1J-Cb-Ask" secondAttribute="bottom" constant="100" id="g7V-tU-JKT"/>
+                <constraint firstAttribute="trailing" secondItem="1um-kR-ryH" secondAttribute="trailing" constant="30" id="okA-pn-du5"/>
+                <constraint firstAttribute="bottom" secondItem="auu-pd-Sw1" secondAttribute="bottom" id="wir-8e-cgl"/>
+            </constraints>
+            <point key="canvasLocation" x="-17" y="116"/>
+        </view>
+    </objects>
+</document>

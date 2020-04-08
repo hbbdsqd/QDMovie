@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  iOSProject
+
+  Created by 苏秋东 on 2019/3/20.
+  Copyright © 2019 苏秋东. All rights reserved.
+*/
+"title" = "navtitle";
+"alertTitle" = "title";
+"alertMessage" = "message";
+"alertOk" = "confirm";
+"alertOther" = "other";

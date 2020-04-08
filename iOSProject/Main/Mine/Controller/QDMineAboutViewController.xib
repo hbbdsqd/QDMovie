@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QDMineAboutViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bofangqi" translatesAutoresizingMaskIntoConstraints="NO" id="fsM-0a-Ucw">
+                    <rect key="frame" x="157" y="94" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="l0E-RR-Xgk"/>
+                        <constraint firstAttribute="width" secondItem="fsM-0a-Ucw" secondAttribute="height" multiplier="1:1" id="p9n-DE-mQj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电影宝1.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqx-hq-87o">
+                    <rect key="frame" x="20" y="224" width="374" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本软件为用户提供便捷，稳定，流畅，高清的视频播放体验，并针对移动环境场景，提供更适合的影片观赏功能。漂亮的UI设计，给你赏心悦目的感觉，从此爱不释手。我们致力于打造完美的影音视频软件，给用户更好的视觉体验，您的肯定是对我们最大的支持。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f43-v1-0dt">
+                    <rect key="frame" x="20" y="286.5" width="374" height="115"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mqx-hq-87o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="7ra-y2-SeS"/>
+                <constraint firstItem="f43-v1-0dt" firstAttribute="top" secondItem="mqx-hq-87o" secondAttribute="bottom" constant="32.5" id="CHb-zX-A8T"/>
+                <constraint firstItem="mqx-hq-87o" firstAttribute="centerX" secondItem="fsM-0a-Ucw" secondAttribute="centerX" id="MkW-No-ENV"/>
+                <constraint firstItem="f43-v1-0dt" firstAttribute="trailing" secondItem="mqx-hq-87o" secondAttribute="trailing" id="gfR-gT-Ykw"/>
+                <constraint firstItem="fsM-0a-Ucw" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="jvE-4g-pDx"/>
+                <constraint firstItem="fsM-0a-Ucw" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="rGk-Ze-w6v"/>
+                <constraint firstItem="f43-v1-0dt" firstAttribute="leading" secondItem="mqx-hq-87o" secondAttribute="leading" id="ufR-ED-8xR"/>
+                <constraint firstItem="mqx-hq-87o" firstAttribute="top" secondItem="fsM-0a-Ucw" secondAttribute="bottom" constant="30" id="y2L-G0-l58"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="106"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bofangqi" width="1024" height="1024"/>
+    </resources>
+</document>

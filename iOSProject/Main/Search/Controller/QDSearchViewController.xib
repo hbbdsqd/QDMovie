@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QDSearchViewController">
+            <connections>
+                <outlet property="cancleBtn" destination="dmd-b9-p09" id="aeK-jz-BJO"/>
+                <outlet property="searchBar" destination="t7c-rP-Cys" id="D2b-td-MaV"/>
+                <outlet property="searchBarTop" destination="rh9-oR-Hbo" id="N74-O3-ri2"/>
+                <outlet property="tableView" destination="FZT-hh-vEN" id="wiV-q7-NDO"/>
+                <outlet property="titleLab" destination="ZEK-UX-OT1" id="l4B-c8-ca0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="搜索热门电影、电视剧、综艺、动漫" translatesAutoresizingMaskIntoConstraints="NO" id="t7c-rP-Cys">
+                    <rect key="frame" x="10" y="44" width="344" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="qVD-PN-Qfa"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="IYO-fc-GJ1"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmd-b9-p09">
+                    <rect key="frame" x="354" y="55" width="50" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Tg9-ez-Ppi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <state key="normal" title="取 消">
+                        <color key="titleColor" red="0.69019607839999997" green="0.1058823529" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleBtnClick:" destination="-1" eventType="touchUpInside" id="XQg-gZ-3eG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近搜索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEK-UX-OT1">
+                    <rect key="frame" x="12" y="120" width="69.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbw-80-Fvl">
+                    <rect key="frame" x="364" y="110.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="WwK-FU-V86"/>
+                        <constraint firstAttribute="width" secondItem="Rbw-80-Fvl" secondAttribute="height" multiplier="1:1" id="eFG-ZX-AaO"/>
+                    </constraints>
+                    <state key="normal" image="icon_serch_delete_black"/>
+                    <connections>
+                        <action selector="delTagBtnClick:" destination="-1" eventType="touchUpInside" id="ONA-iQ-CU0"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FZT-hh-vEN">
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aE0-Xf-EvG"/>
+                        <outlet property="delegate" destination="-1" id="Q6C-sH-kfd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t7c-rP-Cys" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="4eH-Yp-VqA"/>
+                <constraint firstAttribute="trailing" secondItem="FZT-hh-vEN" secondAttribute="trailing" id="6hz-BM-JKn"/>
+                <constraint firstAttribute="trailing" secondItem="dmd-b9-p09" secondAttribute="trailing" constant="10" id="E7k-pN-ybu"/>
+                <constraint firstItem="Rbw-80-Fvl" firstAttribute="centerY" secondItem="ZEK-UX-OT1" secondAttribute="centerY" id="MDE-Zq-C7p"/>
+                <constraint firstItem="ZEK-UX-OT1" firstAttribute="top" secondItem="t7c-rP-Cys" secondAttribute="bottom" constant="20" id="RR3-yl-Fhz"/>
+                <constraint firstItem="dmd-b9-p09" firstAttribute="centerY" secondItem="t7c-rP-Cys" secondAttribute="centerY" id="SKP-pO-JG6"/>
+                <constraint firstAttribute="bottom" secondItem="FZT-hh-vEN" secondAttribute="bottom" id="bit-aF-rs9"/>
+                <constraint firstItem="dmd-b9-p09" firstAttribute="leading" secondItem="t7c-rP-Cys" secondAttribute="trailing" id="dg6-hf-KtX"/>
+                <constraint firstItem="Rbw-80-Fvl" firstAttribute="trailing" secondItem="dmd-b9-p09" secondAttribute="trailing" id="dnB-Vh-DbN"/>
+                <constraint firstItem="FZT-hh-vEN" firstAttribute="top" secondItem="t7c-rP-Cys" secondAttribute="bottom" id="n1K-aS-82P"/>
+                <constraint firstItem="t7c-rP-Cys" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="rh9-oR-Hbo"/>
+                <constraint firstItem="ZEK-UX-OT1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="tqG-3Z-1t5"/>
+                <constraint firstItem="FZT-hh-vEN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vuP-4U-bEL"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_serch_delete_black" width="16" height="16"/>
+    </resources>
+</document>

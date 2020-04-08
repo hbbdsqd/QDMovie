@@ -1,0 +1,78 @@
+//
+//  PrefixHeader.pch
+//  iOSProject
+//
+//  Created by 苏秋东 on 2019/3/13.
+//  Copyright © 2019 苏秋东. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+//#import "ThirdMacros.h"
+//$(SRCROOT)/项目名称/PrefixHeader.pch
+#pragma mark -------------Pods cocopods库文件
+#import "RDVTabBarController.h"
+#import "RDVTabBar.h"
+#import "RDVTabBarItem.h"
+#import "UIImageView+WebCache.h"
+#import "Reachability.h"
+#import "OpenUDID.h"
+#import "MWPhotoBrowser.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "MBProgressHUD.h"
+#import "Masonry.h"
+#import "IQKeyboardManager.h"
+#import "FMDB.h"
+#import "AFNetworking.h"
+#import <ZFPlayer/ZFPlayer.h>
+#import "JKCategories.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+//#import <ZFPlayer/ZFPlayerControlView.h>
+//#import <ZFPlayer/ZFIJKPlayerManager.h>
+
+
+
+#pragma mark -------------Vender第三方的文件
+#import "TFHpple.h"
+
+
+
+
+#pragma mark -------------Pro项目中的文件
+#import "Macros.h"
+#import "ThirdMacros.h"
+#import "QDTabBarViewController.h"
+#import "QDBaseViewController.h"
+#import "QDBaseNavViewController.h"
+#import "QDHomeViewController.h"
+#import "QDMovieMainViewController.h"
+#import "QDDealMainViewController.h"
+#import "QDMineViewController.h"
+#import "CommonTools.h"
+
+#import "AppDelegate.h"
+#import "QDUserDefault.h"
+#import "QDPushRouteHelper.h"
+#import "QDBaseSever.h"
+
+#pragma mark -------------分类
+#import "UIImage+QDExtension.h"
+#import "UIColor+QDExtension.h"
+#import "UIView+QDExtension.h"
+#import "NSString+QDExtension.h"
+#import "MBProgressHUD+QDExtension.h"
+#import "UIButton+QDExtension.h"
+#import "NSDictionary+QDExtension.h"
+#import "UITextField+QDExtension.h"
+#import "NSObject+NGExtension.h"
+
+#pragma mark ------------objective-c
+#import <objc/runtime.h>
+
+#pragma mark ------------Module
+#import "QDCountDownButton.h"
+
+#endif /* PrefixHeader_pch */
