@@ -26,6 +26,10 @@
 
 # 捐赠
 
+后期我会继续完成其他功能的编写和播放器的优化。
+
+如果有需要的功能可以直接给我提交issue。
+
 ![](https://github.com/hbbdsqd/QDMovie/weixin.jpeg)
 
 ![](https://github.com/hbbdsqd/QDMovie/zhifubao.jpeg)
