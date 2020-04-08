@@ -26,7 +26,6 @@
 
 # 捐赠
 
- 
+![](https://github.com/hbbdsqd/QDMovie/weixin.jpeg)
 
-![[http://itmall.vip/WechatIMG14.jpeg](http://itmall.vip/WechatIMG14.jpeg)]
-
+![](https://github.com/hbbdsqd/QDMovie/zhifubao.jpeg)
